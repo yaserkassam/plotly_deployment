@@ -31,6 +31,7 @@ function optionChanged(newSample) {
 }
 
 // Demographics Panel 
+// Get data from sample json file
 function buildMetadata(sample) {
   d3.json("samples.json").then((data) => {
     var metadata = data.metadata;
